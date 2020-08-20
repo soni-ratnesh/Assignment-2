@@ -16,3 +16,5 @@ class Config:
     # Static Assets
     STATIC_FOLDER = 'static'
     TEMPLATES_FOLDER = 'templates'
+    MONGO_DBNAME = 'deploy'
+    MONGO_URI = 'mongodb+srv://ratnesh:hello123@swiggy.fompu.mongodb.net/deploy?retryWrites=true&w=majority'
