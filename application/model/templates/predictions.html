@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions</title>
+</head>
+<body>
+    <h1> Swiggy </h1>
+    {% if predictions %}
+        <h4>Predictions</h4>
+        {% for label in predictions %}
+            <p>{{ label }}</p>
+        {% endfor %}
+    {% elif support_types  %}
+        <h4>File not supported</h4>
+        {% for ext in support_types %}
+            <p>    *.{{ ext }}</p>
+        {% endfor %}
+    {% else %}
+        <p> No File Upload </p>
+    {% endif %}
+
+    <button><a href="/">Upload Another</a> </button>
+
+</body>
+</html>

@@ -11,7 +11,7 @@ def create_app():
         from . import routes
 
         # Register Blueprints
-        from .home import home
-        app.register_blueprint(home.home_bp)
+        from .model import predict
+        app.register_blueprint(predict.model_bp)
 
         return app
